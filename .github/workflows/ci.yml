@@ -6,6 +6,8 @@ on:
       - main
       - develop
     types: [opened, reopened]
+  push:
+    branches: [main]
 
 jobs:
   build:
