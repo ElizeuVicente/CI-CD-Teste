@@ -16,4 +16,16 @@ public class TesteServiceTest {
         // Assert
         assertEquals("Teste PipeLine", resultado);
     }
+
+    @Test
+    public void testHelloWordErroProposital() {
+        // Arrange
+        TesteService service = new TesteService();
+
+        // Act
+        String resultado = service.helloWord();
+
+        // Assert (esperando propositalmente um valor incorreto)
+        assertEquals("Mensagem Errada", resultado);
+    }
 }
